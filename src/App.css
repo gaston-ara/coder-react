@@ -4,12 +4,23 @@
   box-sizing: border-box;
 }
 
+.App {
+  text-align: center;
+}
+
 /* Navbar */
 .fixed-nav {
   position: fixed;
   top: 0px;
   z-index: 1000;
   width: 100%;
+}
+
+/*Item List Container*/
+.shop-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 34px;
+  margin: 0 0 34px;
 }
 
 /*# sourceMappingURL=App.css.map */
