@@ -1,0 +1,31 @@
+/* Contador */
+.contador{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    border: 1px solid;
+    border-color: gray;
+    border-radius: 10px;
+    height: 40px;
+    p{
+        margin-bottom: 0px;
+    }
+    .btn-contador{
+        font-size: 19px;
+        background-color: white;
+        color: black;
+        width: 50px;
+        height: 38px;
+        border: none;
+        border-radius: 10px;
+    }
+    &:hover{
+        border-color: black;
+    }
+}
+ 
+  
+  

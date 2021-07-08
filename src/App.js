@@ -6,13 +6,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from './components/navbar/NavBar.js';
 import ItemListContainer from './components/itemlistcontainer/ItemListContainer'
 import Carrusel from './components/carrusel/Carrusel'
+import BannerInfo from './components/banner-info/BannerInfo'
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
       <Carrusel/>
-      <ItemListContainer greetings="Productos destacados"/>
+      <BannerInfo/>
+      <ItemListContainer greetings="Productos"/>
     </div>
   );
 }

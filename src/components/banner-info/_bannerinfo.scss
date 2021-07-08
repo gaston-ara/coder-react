@@ -1,0 +1,33 @@
+/*Banner - Info*/
+.banner-info{
+    background-color: rgb(226, 226, 226);
+    padding: 40px 0;
+    margin: 20px 0px 70px;
+    .banner-item{
+        display: flex;
+        flex-direction: row;
+        padding: 0px 50px;
+        margin: 15px 0px;
+        h3{
+            margin: 0;
+            font-size: 16px;
+            font-weight: 700;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        p{
+            margin: 0;
+            font-size: 14px;
+        }
+        .icono{
+            padding: 0px 15px;
+        }
+        .info-texto{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            text-align: left;
+          }
+    }
+}
+  

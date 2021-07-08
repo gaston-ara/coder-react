@@ -23,4 +23,96 @@
   margin: 0 0 34px;
 }
 
+/*Banner - Info*/
+.banner-info {
+  background-color: #e2e2e2;
+  padding: 40px 0;
+  margin: 20px 0px 70px;
+}
+.banner-info .banner-item {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 50px;
+  margin: 15px 0px;
+}
+.banner-info .banner-item h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.banner-info .banner-item p {
+  margin: 0;
+  font-size: 14px;
+}
+.banner-info .banner-item .icono {
+  padding: 0px 15px;
+}
+.banner-info .banner-item .info-texto {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Item */
+.card-item {
+  width: 300px;
+  padding: 10px 0;
+  outline: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.card-item .card-img {
+  width: 180px;
+  height: 264px;
+  margin: auto;
+  object-fit: scale-down;
+}
+.card-item .card-content {
+  margin: 20px 10px 0px 10px;
+}
+.card-item .card-content .card-title {
+  height: 48px;
+  color: black;
+  overflow: hidden;
+}
+.card-item .card-content .card-text {
+  color: black;
+}
+.card-item:hover {
+  transition-duration: 0.5s;
+  box-shadow: 0px 0px 5px #a7a7a7;
+}
+
+/* Contador */
+.contador {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  border: 1px solid;
+  border-color: gray;
+  border-radius: 10px;
+  height: 40px;
+}
+.contador p {
+  margin-bottom: 0px;
+}
+.contador .btn-contador {
+  font-size: 19px;
+  background-color: white;
+  color: black;
+  width: 50px;
+  height: 38px;
+  border: none;
+  border-radius: 10px;
+}
+.contador:hover {
+  border-color: black;
+}
+
 /*# sourceMappingURL=App.css.map */
