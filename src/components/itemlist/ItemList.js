@@ -1,8 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import Item from '../Item/Item'
 
 
-const datos = [{
+const jsonData = [{
     "id": 1,
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_658245-MLA43229688028_082020-V.webp",
     "titulo": "Mouse Logitech Master Series MX Master 3",
@@ -36,6 +36,17 @@ const datos = [{
 ];
 
 function ItemList() {
+    const [datos, setData] = useState([]);
+
+    const getData = () => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve(jsonData);
+                }, 2000)
+            });
+        };
+    
+        getData().then((data) => { setData(data) })
 
     return (
         <div className="row d-flex justify-content-center">
