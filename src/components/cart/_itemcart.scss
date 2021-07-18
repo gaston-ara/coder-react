@@ -1,0 +1,26 @@
+/*ItemCart*/
+.item-cart-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-cart-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-cart-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-cart-delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn-delete-cart{
+        border: none;
+        color: black;
+        background-color: #fff;
+    }
+}

@@ -1,9 +1,13 @@
 import React, {useState} from 'react'
 
-function Counter() {
+function Counter(props) {
+    
     const [cantidad, setCantidad] = useState(0);
     function sumar() {
-        setCantidad(cantidad + 1);
+        if (cantidad < props.stock) {
+            setCantidad(cantidad + 1);
+        }
+        
     }
     function restar() {
         if (cantidad > 0) {

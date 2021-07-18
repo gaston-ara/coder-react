@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 .App{
     text-align: center;
 }
@@ -10,4 +13,10 @@
 @import './components//itemlistcontainer/itemlistcontainer';
 @import './components/banner-info/bannerinfo';
 @import './components/Item/item';
-@import './components/counter/counter'
+@import './components/counter/counter';
+@import './components/spinner/spinner';
+@import './components/contacto/contacto';
+@import './pages/cart/cart';
+@import './components/cart/itemcart';
+@import './components/cart/totalpricecart';
+@import './components/footer/footer'
