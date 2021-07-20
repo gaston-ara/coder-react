@@ -1,25 +1,13 @@
-import React, {useState} from 'react'
+import React from 'react'
 
 function Counter(props) {
     
-    const [cantidad, setCantidad] = useState(0);
-    function sumar() {
-        if (cantidad < props.stock) {
-            setCantidad(cantidad + 1);
-        }
-        
-    }
-    function restar() {
-        if (cantidad > 0) {
-            setCantidad(cantidad - 1);
-        }
-    }
     return (
         <div>
             <div className="contador">
-                <button className="btn-contador" onClick={restar}>-</button>
-                <p>{cantidad}</p>
-                <button className="btn-contador" onClick={sumar}>+</button>
+                <button className="btn-contador" onClick={props.restar}>-</button>
+                <p>{props.cantidad}</p>
+                <button className="btn-contador" onClick={props.sumar}>+</button>
             </div>
         </div>
     )

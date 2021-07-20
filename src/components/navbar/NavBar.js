@@ -16,7 +16,7 @@ function NavBar() {
                     <Nav.Link href="/#contacto">Contacto</Nav.Link>
                 </Nav>
                 <Nav>
-                    <Nav.Link href="#">Iniciar sesión</Nav.Link>
+                    <Nav.Link href="/login">Iniciar sesión</Nav.Link>
                     <Nav.Link href="/cart"><CartWidget /></Nav.Link>
                 </Nav>
             </Navbar.Collapse>

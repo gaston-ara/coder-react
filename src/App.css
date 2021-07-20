@@ -274,4 +274,56 @@ footer .fondo-linkedin:hover {
   border-radius: 30%;
 }
 
+/* Error Page */
+.error {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Detalle -contenedor*/
+.detail-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Detalle del item*/
+.buy-box {
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.buy-box .buybox-title h3 {
+  text-align: left;
+  font-size: 34px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+}
+.buy-box .buybox-price p {
+  text-align: left;
+  font-size: 28px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+}
+.buy-box .details-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buy-box .details-btn button {
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  margin: auto;
+  height: 40px;
+  padding: 5px;
+}
+
 /*# sourceMappingURL=App.css.map */

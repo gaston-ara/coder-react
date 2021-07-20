@@ -1,11 +1,8 @@
 import React from 'react'
-import Counter from '../counter/Counter'
+import ItemCounterContainer from '../counter/ItemCounterContainer'
 
 function Item(props) {
-    const alertCantidad = () => {
-        alert(props.cantidad)
-    }
-
+    
     return (
         <div className="col-md-4" >
             <div className="card-item" key={props.key}>
@@ -15,8 +12,7 @@ function Item(props) {
                         <h5 class="card-title">{props.title}</h5>
                         <p class="card-text">${props.price}</p>
                     </div>
-                    <Counter stock={props.stock}/>
-                    <button onClick={alertCantidad}>AGREGAR AL CARRITO</button>
+                    <ItemCounterContainer stock={props.stock}/>
             </div>
         </div>
     )

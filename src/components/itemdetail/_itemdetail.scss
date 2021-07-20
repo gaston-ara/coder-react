@@ -1,0 +1,37 @@
+/*Detalle del item*/
+.buy-box{
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .buybox-title h3{
+        text-align: left;
+        font-size: 34px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 700;
+    }
+    .buybox-price p{
+            text-align: left;
+            font-size: 28px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 700;
+    }
+    .details-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            display: flex;
+            justify-content: center;
+            border-radius: 25px;
+            background-color: black;
+            color: white;
+            width: 100%;
+            margin: auto;
+            height: 40px;
+            padding: 5px;
+        }
+    }
+      
+}
+  
