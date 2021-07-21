@@ -1,20 +1,21 @@
 import React from 'react'
+import Counter from '../counter/Counter'
 
 function ItemDetail() {
     return (
         <div>
-            {detalle !== undefined ? <div className="container">
+            <div className="container">
             <div className="row">
                 <div className="col-md-7 img-box">
-                    <img src={detalle.thumbnail} alt="" />
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_658245-MLA43229688028_082020-V.webp" alt="" />
                 </div>
                 <div className="col-md-5 buy-box">
                     <div className="row">
                         <div className="col-md-12 buybox-title">
-                            <h3>{detalle.title}</h3>
+                            <h3>Mouse Logitech Master Series MX Master 3</h3>
                         </div>
                         <div className="col-md-12 buybox-price">
-                            <p>${detalle.price}</p>
+                            <p>$10349</p>
                         </div>
                         <div className="col-md-12 buy-counter row">
                             <div className="col-md-4 counter-prod">
@@ -35,9 +36,6 @@ function ItemDetail() {
                 Dignissimos voluptatibus possimus amet nihil odit exercitationem, dolor provident eligendi inventore, voluptate voluptatem. Consequuntur vero omnis voluptate fugit voluptatum, ducimus facere voluptas, eveniet odit odio labore eum aperiam. Eligendi, dignissimos.</p>
             </div>
         </div>
-        :
-        <Spinner/>
-        }
         </div>
     )
 }
