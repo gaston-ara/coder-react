@@ -1,5 +1,5 @@
 import React from 'react'
-import ItemCounterContainer from '../counter/ItemCounterContainer'
+
 
 function Item(props) {
     
@@ -12,7 +12,7 @@ function Item(props) {
                         <h5 class="card-title">{props.title}</h5>
                         <p class="card-text">${props.price}</p>
                     </div>
-                    <ItemCounterContainer stock={props.stock}/>
+                    
             </div>
         </div>
     )

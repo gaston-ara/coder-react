@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Counter from './Counter'
 
-function ItemCounterContainer(props) {
+function ItemCounterContainer({stock}) {
     
     const [cantidad, setCantidad] = useState(1);
     
@@ -14,7 +14,7 @@ function ItemCounterContainer(props) {
     }
     
     const sumar = () => {
-        if (cantidad < props.stock) {
+        if (cantidad < stock) {
             setCantidad(cantidad + 1);
         }
     }
@@ -25,8 +25,13 @@ function ItemCounterContainer(props) {
     }
     return (
         <div>
-            <Counter sumar={sumar} restar={restar} cantidad={cantidad}/>
-            <button onClick={onAdd}>AGREGAR AL CARRITO</button>
+            <div className="col-md-4">
+                <Counter sumar={sumar} restar={restar} cantidad={cantidad}/>
+            </div>
+            <div className="col-md-8 details-btn">
+                <button  onClick={onAdd}>AGREGAR AL CARRITO</button>
+            </div>
+            
         </div>
     )
 }

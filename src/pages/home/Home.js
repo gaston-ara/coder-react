@@ -3,15 +3,13 @@ import Carrusel from '../../components/carrusel/Carrusel'
 import BannerInfo from '../../components/banner-info/BannerInfo'
 import ItemListContainer from '../../components/itemlistcontainer/ItemListContainer'
 import Contacto from '../../components/contacto/Contacto'
-import ItemDetailContainer from '../../components/itemdetail/ItemDetailContainer'
 
-function Home() {
+function Home(props) {
     return (
         <div>
             <Carrusel />
             <BannerInfo />
-            <ItemListContainer greetings="Productos destacados" />
-            <ItemDetailContainer/>
+            <ItemListContainer greetings="Productos" params={props.params} />
             <Contacto />
         </div>
     )
