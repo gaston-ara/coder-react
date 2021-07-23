@@ -1,0 +1,31 @@
+/*Contenedor del contador*/
+
+.stock-disponible{
+        p{
+            text-align: left;
+        }
+    }
+.counter-container{
+    display: flex;
+    flex-direction: row;
+    .botones-counter{
+        padding-left: 0;
+    }
+    
+    .details-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            display: flex;
+            justify-content: center;
+            border-radius: 25px;
+            background-color: black;
+            color: white;
+            width: 100%;
+            margin: auto;
+            height: 40px;
+            padding: 5px;
+        }
+    }
+}

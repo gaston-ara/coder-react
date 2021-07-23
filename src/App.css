@@ -291,6 +291,17 @@ footer .fondo-linkedin:hover {
 }
 
 /*Detalle del item*/
+.img-box {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  align-items: center;
+}
+.img-box img {
+  width: 280px;
+  height: 280px;
+}
+
 .buy-box {
   height: 320px;
   display: flex;
@@ -299,9 +310,10 @@ footer .fondo-linkedin:hover {
 }
 .buy-box .buybox-title h3 {
   text-align: left;
-  font-size: 34px;
+  font-size: 21px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
+  width: 430px;
 }
 .buy-box .buybox-price p {
   text-align: left;
@@ -309,21 +321,10 @@ footer .fondo-linkedin:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
 }
-.buy-box .details-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.buy-box .details-btn button {
-  display: flex;
-  justify-content: center;
-  border-radius: 25px;
-  background-color: black;
-  color: white;
-  width: 100%;
+
+.product-description {
+  width: 90%;
   margin: auto;
-  height: 40px;
-  padding: 5px;
 }
 
 /*Barra de categorias*/
@@ -342,6 +343,35 @@ footer .fondo-linkedin:hover {
 }
 .categories-bar .categoria:hover {
   color: white;
+}
+
+/*Contenedor del contador*/
+.stock-disponible p {
+  text-align: left;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: row;
+}
+.counter-container .botones-counter {
+  padding-left: 0;
+}
+.counter-container .details-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.counter-container .details-btn button {
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  margin: auto;
+  height: 40px;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=App.css.map */

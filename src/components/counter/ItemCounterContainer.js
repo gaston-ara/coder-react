@@ -24,13 +24,19 @@ function ItemCounterContainer({stock}) {
         }
     }
     return (
-        <div>
-            <div className="col-md-4">
+        <div >
+            <div className="stock-disponible">
+                <p>Stock: {stock}</p>
+            </div>
+            <div className="counter-container">
+                <div className="col-md-4 botones-counter">
                 <Counter sumar={sumar} restar={restar} cantidad={cantidad}/>
             </div>
             <div className="col-md-8 details-btn">
                 <button  onClick={onAdd}>AGREGAR AL CARRITO</button>
             </div>
+            </div>
+            
             
         </div>
     )

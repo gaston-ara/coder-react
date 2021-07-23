@@ -1,4 +1,14 @@
 /*Detalle del item*/
+.img-box{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    align-items: center;
+    img{
+        width: 280px;
+        height: 280px;
+    }
+}
 .buy-box{
     height: 320px;
     display: flex;
@@ -6,9 +16,10 @@
     justify-content: space-around;
     .buybox-title h3{
         text-align: left;
-        font-size: 34px;
+        font-size: 21px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 700;
+        width: 430px;
     }
     .buybox-price p{
             text-align: left;
@@ -16,22 +27,10 @@
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-weight: 700;
     }
-    .details-btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        button{
-            display: flex;
-            justify-content: center;
-            border-radius: 25px;
-            background-color: black;
-            color: white;
-            width: 100%;
-            margin: auto;
-            height: 40px;
-            padding: 5px;
-        }
-    }
-      
+         
+}
+.product-description{
+    width: 90%;
+    margin: auto;
 }
   
