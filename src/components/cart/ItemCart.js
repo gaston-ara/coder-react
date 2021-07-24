@@ -7,10 +7,9 @@ function ItemCart() {
             <div className="col-md-2 item-cart-img">
                 <img src="#" alt="" />
             </div>
-            <div className="col-md-4 item-cart-title">
+            <div className="col-md-6 item-cart-title">
                 Titulo
             </div>
-            <Counter className="col-md-2"/>
             <div className="col-md-3 item-cart-price">
                 $00000
             </div>

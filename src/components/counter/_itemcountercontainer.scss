@@ -10,6 +10,17 @@
     flex-direction: row;
     .botones-counter{
         padding-left: 0;
+        .finish-buying{
+            display: flex;
+            justify-content: center;
+            border-radius: 25px;
+            background-color: black;
+            color: white;
+            width: 100%;
+            margin: auto;
+            height: 40px;
+            padding: 7px;
+        }
     }
     
     .details-btn{
@@ -28,4 +39,5 @@
             padding: 5px;
         }
     }
+    
 }

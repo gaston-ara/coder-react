@@ -357,6 +357,17 @@ footer .fondo-linkedin:hover {
 .counter-container .botones-counter {
   padding-left: 0;
 }
+.counter-container .botones-counter .finish-buying {
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  margin: auto;
+  height: 40px;
+  padding: 7px;
+}
 .counter-container .details-btn {
   display: flex;
   justify-content: center;
