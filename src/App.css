@@ -180,8 +180,8 @@ html {
 
 /* Carrito de compra */
 .cart-container {
-  margin: 100px 0;
-  height: 100vh;
+  margin-top: 100px;
+  height: 80vh;
 }
 .cart-container .total-price {
   display: flex;
@@ -240,7 +240,7 @@ html {
 
 /* Footer */
 footer {
-  width: 100vw;
+  width: 100%;
   padding: 10px 0;
   background-color: #242424;
 }
