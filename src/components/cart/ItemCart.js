@@ -1,16 +1,19 @@
 import React from 'react'
 
-function ItemCart() {
+function ItemCart(props) {
     return (
         <div className="row itemcart">
             <div className="col-md-2 item-cart-img">
-                <img src="#" alt="" />
+                <img src={props.image} alt="" />
+            </div>
+            <div className="col-md-1">
+                x{props.qty}
             </div>
             <div className="col-md-6 item-cart-title">
-                Titulo
+                {props.title}
             </div>
-            <div className="col-md-3 item-cart-price">
-                $00000
+            <div className="col-md-2 item-cart-price">
+                ${props.price}
             </div>
             <div className="col-md-1 item-cart-delete">
                 <button className="btn-delete-cart" type="button">

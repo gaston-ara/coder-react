@@ -3,17 +3,17 @@ import {Link} from 'react-router-dom'
 import Counter from './Counter'
 import {useCartContext} from '../../context/Contexto'
 
-function ItemCounterContainer({stock}) {
+function ItemCounterContainer({item, stock}) {
     
     const [cantidad, setCantidad] = useState(1);
     const [addedProduct, setaddedProduct] = useState(false)
 
-    const {updateCartCount} = useCartContext()
+    const {addToCart} = useCartContext()
     
     const onAdd = () => {
         setaddedProduct(true);
-        updateCartCount(cantidad)
-      
+        addToCart(item, cantidad)
+      console.log({item});
     }
     
     const sumar = () => {

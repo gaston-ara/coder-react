@@ -21,7 +21,7 @@ function ItemDetail({ item }) {
                             
                             <div className="col-md-12 buy-counter row">
                                 <div className="col-md-12 counter-prod">
-                                    <ItemCounterContainer stock={item.available_quantity} />
+                                    <ItemCounterContainer item={item} stock={item.available_quantity} />
                                 </div>
                             </div>
                         </div>
