@@ -4,12 +4,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 // Componentes importados
 import AppRouter from './routers/AppRouter'
+import CartProvider, { CartContext } from './context/Contexto'
 
 
 function App() {
+  console.log(CartContext);
   return (
     <div className="App">
-      <AppRouter/>
+      <CartProvider>
+        <AppRouter />
+      </CartProvider>
     </div>
   );
 }

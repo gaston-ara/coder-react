@@ -7,15 +7,16 @@ function Categories() {
     const { categoryId } = useParams()
     const [datos, setData] = useState([]);
 
-    const getData = async () => {
+    
+
+    useEffect(() => {
+        const getData = async () => {
         const data = await fetch(`https://api.mercadolibre.com/sites/MLA/search?category=${categoryId}`);
         const resData = await data.json();
         console.log(resData.results);
         setData(resData.results)
     };
-
-    useEffect(() => {
-        getData();
+    getData();
     }, [categoryId])
 
     return (

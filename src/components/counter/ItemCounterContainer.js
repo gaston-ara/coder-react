@@ -1,19 +1,19 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import Counter from './Counter'
+import {useCartContext} from '../../context/Contexto'
 
 function ItemCounterContainer({stock}) {
     
     const [cantidad, setCantidad] = useState(1);
     const [addedProduct, setaddedProduct] = useState(false)
+
+    const {updateCartCount} = useCartContext()
     
     const onAdd = () => {
-        setaddedProduct(true)
-        // if (cantidad !== 1) {
-        //     alert('Se agregaron ' + cantidad + ' productos')
-        // }else{
-        //     alert('Se agregó ' + cantidad + ' producto')
-        // }
+        setaddedProduct(true);
+        updateCartCount(cantidad)
+      
     }
     
     const sumar = () => {
