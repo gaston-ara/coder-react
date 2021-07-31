@@ -26,8 +26,14 @@ const CartProvider = ({ children }) => {
         setcartCount(prev => prev + qty)
     }
 
+    const removingItem = (id, qty) =>{
+            const newArray = cartItems.filter((item) => item.id !== id);
+            const updateCount = cartCount - qty
+            setcartItems(newArray); 
+            setcartCount(updateCount)
+    }
 
-    return <CartContext.Provider value={{ cartCount, cartItems, addToCart }}>{children}</CartContext.Provider>
+    return <CartContext.Provider value={{ cartCount, cartItems, addToCart, removingItem }}>{children}</CartContext.Provider>
 }
 
 export default CartProvider;

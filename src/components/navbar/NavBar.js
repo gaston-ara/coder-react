@@ -19,7 +19,13 @@ function NavBar() {
                         <NavLink style={{ textDecoration: 'none', color: 'white', padding: '9px' }} to="/#contacto">Contacto</NavLink>
                     </Nav>
                     <Nav>
-                        <NavLink style={{ textDecoration: 'none', color: 'white', padding: '9px', display: 'flex', alignItems: 'flex-end' }} to="/cart"><CartWidget /><span>({cartCount})</span></NavLink>
+                        {cartCount ? (
+                            <NavLink style={{ textDecoration: 'none', color: 'white', padding: '9px', display: 'flex', alignItems: 'flex-end' }} to="/cart"><CartWidget /><span>({cartCount})</span></NavLink>
+                        ) : (
+                        <></>
+                        )
+                        }
+
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

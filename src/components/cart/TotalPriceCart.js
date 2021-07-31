@@ -1,10 +1,10 @@
 import React from 'react'
 
-function TotalPriceCart() {
+function TotalPriceCart(props) {
     return (
         <div className="row box-price-cart">
             <div className="col-md-12 ">
-                <div className="total-price">Precio Total: $00000</div>
+                <div className="total-price">Precio Total: ${props.total}</div>
             </div>
             
         </div>
