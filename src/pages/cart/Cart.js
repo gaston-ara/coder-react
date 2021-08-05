@@ -25,23 +25,23 @@ function Cart() {
                     (<EmptyCart />)}
             </div>
             <hr />
-            
+
             <div className="total-price">
                 {cartItems.length > 0 ? (
-<TotalPriceCart total={totalCart} />
-            ):(
-                <></>
-            )}
-                
+                    <TotalPriceCart total={totalCart} />
+                ) : (
+                    <></>
+                )}
+
             </div>
             <hr className="w-100" />
             <div >
-            {cartItems.length > 0 ? (
-<button className="buy-btn-cart">Comprar</button>
-            ):(
-                <></>
-            )}
-                
+                {cartItems.length > 0 ? (
+                    <button className="buy-btn-cart">Comprar</button>
+                ) : (
+                    <></>
+                )}
+
             </div>
 
 

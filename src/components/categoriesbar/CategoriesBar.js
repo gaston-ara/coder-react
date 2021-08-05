@@ -6,9 +6,9 @@ function CategoriesBar() {
     return (
         <Nav className="categories-bar">
             <div className="container">
-                    <Link to="/category/MLA1648" className="categoria">Computación</Link>
-                    <Link to="/category/MLA1144" className="categoria">Consolas y Videojuegos</Link>
-                    <Link to="/category/MLA1000" className="categoria">Electrónica, Audio y Video</Link>
+                    <Link to="/category/perifericos" className="categoria">Periféricos</Link>
+                    <Link to="/category/notebooks" className="categoria">Notebooks</Link>
+                    <Link to="/category/auriculares" className="categoria">Auriculares</Link>
             </div>
         </Nav>
     )

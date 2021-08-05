@@ -181,7 +181,10 @@ html {
 /* Carrito de compra */
 .cart-container {
   margin-top: 100px;
-  height: 80vh;
+  min-height: 80vh;
+}
+.cart-container .cart-item-container {
+  min-height: 50vh;
 }
 .cart-container .total-price {
   display: flex;
@@ -198,6 +201,7 @@ html {
   margin: auto;
   height: 40px;
   font-size: 1.5rem;
+  margin-bottom: 50px;
 }
 
 /*ItemCart*/
@@ -205,6 +209,11 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.item-cart-img img {
+  object-fit: scale-down;
+  width: 100px;
+  height: 100px;
 }
 
 .item-cart-title {
@@ -300,6 +309,7 @@ footer .fondo-linkedin:hover {
 .img-box img {
   width: 280px;
   height: 280px;
+  object-fit: scale-down;
 }
 
 .buy-box {
@@ -383,6 +393,14 @@ footer .fondo-linkedin:hover {
   margin: auto;
   height: 40px;
   padding: 5px;
+}
+
+/*Mensaje carrito vacio*/
+.empty-cart-message {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=App.css.map */

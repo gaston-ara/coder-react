@@ -3,6 +3,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    img{
+        object-fit: scale-down;
+        width: 100px;
+        height: 100px;
+    }
 }
 .item-cart-title{
     display: flex;
