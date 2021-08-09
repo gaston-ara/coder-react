@@ -33,7 +33,13 @@ const CartProvider = ({ children }) => {
             setcartCount(updateCount)
     }
 
-    return <CartContext.Provider value={{ cartCount, cartItems, addToCart, removingItem }}>{children}</CartContext.Provider>
+    const clear = () => {
+        setcartItems([])
+        setcartCount(0)
+        
+    }
+
+    return <CartContext.Provider value={{ cartCount, cartItems, addToCart, removingItem, clear }}>{children}</CartContext.Provider>
 }
 
 export default CartProvider;

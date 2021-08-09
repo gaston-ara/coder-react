@@ -7,6 +7,7 @@ import Footer from '../components/footer/Footer'
 import Error from '../pages/error/Error'
 import Detalle from '../pages/detalle/Detalle'
 import CategoriesBar from '../components/categoriesbar/CategoriesBar'
+import Checkout from '../pages/checkout/Checkout'
 
 
 function AppRouter() {
@@ -17,6 +18,7 @@ function AppRouter() {
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/cart" component={Cart} />
+                <Route exact path="/checkout" component={Checkout}/>
                 <Route exact path="/category/:categoryId" component={Home}/>
                 <Route exact path="/:product_id" component={Detalle}/>
                 <Route exact path="*" component={Error} />

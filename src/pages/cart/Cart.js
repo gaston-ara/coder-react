@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import EmptyCart from '../../components/cart/EmptyCart'
 import ItemCart from '../../components/cart/ItemCart'
 import TotalPriceCart from '../../components/cart/TotalPriceCart'
@@ -37,7 +38,8 @@ function Cart() {
             <hr className="w-100" />
             <div >
                 {cartItems.length > 0 ? (
-                    <button className="buy-btn-cart">Comprar</button>
+                    <Link to="/checkout" style={{ textDecoration: "none" }}><button className="buy-btn-cart">Comprar</button></Link>
+
                 ) : (
                     <></>
                 )}
