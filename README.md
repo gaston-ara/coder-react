@@ -2,6 +2,10 @@
 
 Consiste en un simulador de ecommerce realizado en React, con el fin de ser presentado como proyecto final del curso de React de Coderhouse.
 
+## GIF de demostracion.
+
+![](./src/assets/ReactApp.gif)
+
 ## Librerias Utilizadas
 
 SASS: Se utilizó para organizar los estilos dividiendolos por cada componente.
