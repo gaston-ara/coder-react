@@ -6,7 +6,6 @@ import NavBar from '../components/navbar/NavBar'
 import Footer from '../components/footer/Footer'
 import Error from '../pages/error/Error'
 import Detalle from '../pages/detalle/Detalle'
-import CategoriesBar from '../components/categoriesbar/CategoriesBar'
 import Checkout from '../pages/checkout/Checkout'
 
 
@@ -14,7 +13,6 @@ function AppRouter() {
     return (
         <Router>
             <NavBar />
-            <CategoriesBar />
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/cart" component={Cart} />

@@ -29,7 +29,7 @@ function ItemDetailContainer() {
     }, [product_id])
 
     return (
-        <div className="container detail-container">
+        <div className="detail-container">
             {data.map((item) => {
                 return <ItemDetail item={item} key={item.id} />;
             })}

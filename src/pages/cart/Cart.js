@@ -20,9 +20,9 @@ function Cart() {
             <div className="cart-item-container">
                 {cartItems.length > 0 ? (cartItems.map((item, index) => {
                     return <ItemCart key={index} id={item.id} image={item.thumbnail} title={item.title} price={item.price} qty={item.qty} />
-                }))
-                    :
-                    (<EmptyCart />)}
+                })
+                ) : (
+                    <EmptyCart />)}
             </div>
             <hr />
             <div className="total-price">

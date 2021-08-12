@@ -10,17 +10,18 @@ function NavBar() {
     return (
         <div className="fixed-nav">
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <NavLink style={{ textDecoration: 'none', color: 'white', padding: '9px' }} to="/">ModernClix</NavLink>
+                <NavLink style={{ textDecoration: 'none', color: 'white', marginRight: '10px', fontSize: '18px', fontWeight: '500' }} to="/">ModernClix</NavLink>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <NavLink style={{ textDecoration: 'none', color: 'white', padding: '9px', marginLeft: '10px' }} to="/">Inicio</NavLink>
-                        <NavLink style={{ textDecoration: 'none', color: 'white', padding: '9px' }} to="/#catalogo">Catálogo</NavLink>
-                        <NavLink style={{ textDecoration: 'none', color: 'white', padding: '9px' }} to="/#contacto">Contacto</NavLink>
+                        <NavLink style={{ textDecoration: 'none', color: 'white', padding: '9px' }} to="/">Inicio</NavLink>
+                        <NavLink style={{ textDecoration: 'none', color: 'white', padding: '9px' }} to="/category/perifericos">Periféricos</NavLink>
+                        <NavLink style={{ textDecoration: 'none', color: 'white', padding: '9px' }} to="/category/notebooks">Notebooks</NavLink>
+                        <NavLink style={{ textDecoration: 'none', color: 'white', padding: '9px' }} to="/category/auriculares">Auriculares</NavLink>
                     </Nav>
                     <Nav>
                         {cartCount !== 0 ? (
-                            <NavLink style={{ textDecoration: 'none', color: 'white', padding: '9px', display: 'flex', alignItems: 'flex-end' }} to="/cart"><CartWidget /><span>({cartCount})</span></NavLink>
+                            <NavLink style={{ textDecoration: 'none', color: 'white', padding: '9px', display: 'flex', alignItems: 'flex-end', justifyContent: "center" }} to="/cart"><CartWidget /><span>({cartCount})</span></NavLink>
                         ) : (
                             <></>
                         )

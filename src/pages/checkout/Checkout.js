@@ -8,17 +8,7 @@ function Checkout() {
     const { cartItems, clear } = useCartContext();
     const [compraFinalizada, setcompraFinalizada] = useState(false)
     const [ordenId, setordenId] = useState("")
-    const [formName, setformName] = useState("")
-    const [formTel, setformTel] = useState("")
-    const [formEmail, setformEmail] = useState("")
     const [itemsOrden, setitemsOrden] = useState([])
-
-    const getForm = (nombre, tel, email) => {
-        setformName(nombre.value);
-        setformTel(tel.value);
-        setformEmail(email.value);
-        setcompraFinalizada(true);
-    }
 
     useEffect(() => {
         setitemsOrden(cartItems.map((value) => {
@@ -42,8 +32,6 @@ function Checkout() {
             totalCart += cartItems[item].price * cartItems[item].qty;
         }
 
-        getForm(nombre, tel, email)
-
         const nueva_orden = {
             buyer: {
                 name: nombre.value,
@@ -62,6 +50,7 @@ function Checkout() {
             .then((resultado) => {
                 setordenId(resultado.id)
             })
+        setcompraFinalizada(true);
         clear()
     }
 

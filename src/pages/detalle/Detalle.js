@@ -3,7 +3,7 @@ import ItemDetailContainer from '../../components/itemdetail/ItemDetailContainer
 
 function Detalle() {
     return (
-        <div>
+        <div className="container">
             <ItemDetailContainer />
         </div>
     )

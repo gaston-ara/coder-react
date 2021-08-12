@@ -4,7 +4,7 @@ import ItemCounterContainer from '../counter/ItemCounterContainer'
 function ItemDetail({ item }) {
     return (
         <div>
-            <div className="container" key={item.id}>
+            <div className="container py-5" key={item.id}>
                 <div className="row">
                     <div className="col-md-6 img-box">
                         <img src={item.thumbnail} alt="" />
@@ -17,7 +17,7 @@ function ItemDetail({ item }) {
                             <div className="col-md-12 buybox-price">
                                 <p>${item.price}</p>
                             </div>
-                            <div className="col-md-12 buy-counter row">
+                            <div className="col-md-12 buy-counter row m-auto ">
                                 <div className="col-md-12 counter-prod">
                                     <ItemCounterContainer item={item} stock={item.available_quantity} />
                                 </div>

@@ -156,28 +156,6 @@ html {
     transform: rotate(360deg);
   }
 }
-/* Contacto */
-.contact-container {
-  width: 70vw;
-  margin: 50px auto;
-}
-.contact-container .contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
-  margin-bottom: 70px;
-}
-.contact-container input, .contact-container textarea {
-  width: 100%;
-  margin-top: 20px;
-  padding: 10px;
-  border: none;
-  background-color: #f2f2f2;
-  font-size: 16px;
-  outline: none;
-}
-
 /* Carrito de compra */
 .cart-container {
   margin-top: 100px;
@@ -293,7 +271,7 @@ footer .fondo-linkedin:hover {
 
 /*Detalle -contenedor*/
 .detail-container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,24 +313,6 @@ footer .fondo-linkedin:hover {
 .product-description {
   width: 90%;
   margin: auto;
-}
-
-/*Barra de categorias*/
-.categories-bar {
-  width: 100%;
-  height: 25px;
-  position: fixed;
-  top: 56px;
-  z-index: 1030;
-  background-color: black;
-}
-.categories-bar .categoria {
-  text-decoration: none;
-  padding: 0 10px;
-  color: silver;
-}
-.categories-bar .categoria:hover {
-  color: white;
 }
 
 /*Contenedor del contador*/
