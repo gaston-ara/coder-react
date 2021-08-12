@@ -14,13 +14,13 @@ function AppRouter() {
     return (
         <Router>
             <NavBar />
-            <CategoriesBar/>
+            <CategoriesBar />
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route exact path="/cart" component={Cart} />
-                <Route exact path="/checkout" component={Checkout}/>
-                <Route exact path="/category/:categoryId" component={Home}/>
-                <Route exact path="/:product_id" component={Detalle}/>
+                <Route exact path="/checkout" component={Checkout} />
+                <Route exact path="/category/:categoryId" component={Home} />
+                <Route exact path="/:product_id" component={Detalle} />
                 <Route exact path="*" component={Error} />
             </Switch>
             <Footer />

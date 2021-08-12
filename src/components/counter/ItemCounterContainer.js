@@ -13,7 +13,6 @@ function ItemCounterContainer({ item, stock }) {
     const onAdd = () => {
         setaddedProduct(true);
         addToCart(item, cantidad)
-        console.log({ item });
     }
 
     const sumar = () => {
@@ -41,12 +40,8 @@ function ItemCounterContainer({ item, stock }) {
                         </Link>
                     )
                     }
-
                 </div>
-
             </div>
-
-
         </div>
     )
 }

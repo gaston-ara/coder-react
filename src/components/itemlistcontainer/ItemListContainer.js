@@ -9,6 +9,7 @@ function ItemListContainer(props) {
     const { categoryId } = useParams()
 
     const getProducts = () => {
+
         const firestore = getFirestore()
         const collection = firestore.collection("productos")
 
@@ -26,41 +27,27 @@ function ItemListContainer(props) {
                     setData(docs);
                 })
 
-        } else{
-            let query = collection.where("categoryId","==",categoryId);
+        } else {
+            let query = collection.where("categoryId", "==", categoryId);
             query = query.get()
 
             query
-                .then((snapshot)=>{
+                .then((snapshot) => {
                     const documentos = snapshot.docs
-                    const productos = documentos.map((doc)=>{
-                        return {id:doc.id,...doc.data()}
+                    const productos = documentos.map((doc) => {
+                        return { id: doc.id, ...doc.data() }
                     })
                     setData(productos)
                 })
-                .catch((error)=>{
+                .catch((error) => {
                     console.log(error)
                 })
         }
-
     };
 
-    console.log(datos);
     useEffect(() => {
         getProducts();
     }, [categoryId])
-
-    // const getData = async () => {
-    //     const data = await fetch(`https://api.mercadolibre.com/sites/MLA/search?category=MLA1648`);
-    //     const resData = await data.json();
-    //     console.log(resData.results);
-    //     setData(resData.results)
-    //     };
-
-
-    // useEffect(() => {
-    //     getData()
-    // }, [])
 
     return (
         <div className="container">

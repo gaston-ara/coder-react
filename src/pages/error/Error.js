@@ -4,7 +4,7 @@ function Error() {
     return (
         <div className="container">
             <div className="error">
-            Error 404 Not Found
+                Error 404 Not Found
             </div>
         </div>
     )

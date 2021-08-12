@@ -14,18 +14,15 @@ function ItemDetail({ item }) {
                             <div className="col-md-12 buybox-title">
                                 <h3>{item.title}</h3>
                             </div>
-
                             <div className="col-md-12 buybox-price">
                                 <p>${item.price}</p>
                             </div>
-                            
                             <div className="col-md-12 buy-counter row">
                                 <div className="col-md-12 counter-prod">
                                     <ItemCounterContainer item={item} stock={item.available_quantity} />
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
                 <div className="text-left product-description">

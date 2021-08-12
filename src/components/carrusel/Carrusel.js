@@ -8,22 +8,22 @@ function Carrusel() {
     return (
         <div>
             <Carousel>
-                <Carousel.Item style={{'height':"100vh", "objectFit": "cover"}}>
-                    <img style={{'height':"100vh", "objectFit": "cover"}}
+                <Carousel.Item style={{ 'height': "100vh", "objectFit": "cover" }}>
+                    <img style={{ 'height': "100vh", "objectFit": "cover" }}
                         className="d-block w-100 img-fluid"
                         src={Img1}
                         alt="First slide"
                     />
                 </Carousel.Item >
-                <Carousel.Item style={{'height':"100vh", "objectFit": "cover"}}>
-                    <img style={{'height':"100vh", "objectFit": "cover"}}
+                <Carousel.Item style={{ 'height': "100vh", "objectFit": "cover" }}>
+                    <img style={{ 'height': "100vh", "objectFit": "cover" }}
                         className="d-block w-100 img-fluid"
                         src={Img2}
                         alt="Second slide"
                     />
                 </Carousel.Item>
-                <Carousel.Item style={{'height':"100vh", "objectFit": "cover"}}>
-                    <img style={{'height':"100vh", "objectFit": "cover"}}
+                <Carousel.Item style={{ 'height': "100vh", "objectFit": "cover" }}>
+                    <img style={{ 'height': "100vh", "objectFit": "cover" }}
                         className="d-block w-100 img-fluid"
                         src={Img3}
                         alt="Third slide"

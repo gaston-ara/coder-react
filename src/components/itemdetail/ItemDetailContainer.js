@@ -3,11 +3,9 @@ import ItemDetail from './ItemDetail'
 import { getFirestore } from '../../Firebase'
 import { useParams } from 'react-router-dom'
 
-
 function ItemDetailContainer() {
     const [data, setData] = useState([])
     let { product_id } = useParams();
-
 
     const getProducts = () => {
         const firestore = getFirestore()
@@ -19,7 +17,6 @@ function ItemDetailContainer() {
             .then(resultado => {
                 resultado.forEach(documento => {
                     docs.push({ ...documento.data(), id: documento.id });
-
                     let productosFiltrados = docs.filter((productoFiltrado) => productoFiltrado.id === product_id);
                     setData(productosFiltrados);
                 });
@@ -30,22 +27,12 @@ function ItemDetailContainer() {
     useEffect(() => {
         getProducts();
     }, [product_id])
-console.log(data);
-    // useEffect(() => {
-    //     fetch(`https://api.mercadolibre.com/items/${product_id}?include_attributes=all`)
-    //         .then(res => res.json())
-    //         .then(res => {
-    //             setData(res)
-    //         })
-    //         .catch(res => console.log(res))
-    // }, [product_id])
-    
+
     return (
         <div className="container detail-container">
             {data.map((item) => {
-            return <ItemDetail item={item} key={item.id} />;
-          })}
-            
+                return <ItemDetail item={item} key={item.id} />;
+            })}
         </div>
     )
 }

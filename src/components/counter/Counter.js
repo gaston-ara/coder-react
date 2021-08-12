@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Counter(props) {
-    
+
     return (
         <div className="row">
             <div className="col-md-4 contador">
@@ -10,7 +10,7 @@ function Counter(props) {
                 <button className="btn-contador" onClick={props.sumar}>+</button>
             </div>
             <div className="col-md-8 details-btn">
-                <button  onClick={props.onAdd}>AGREGAR AL CARRITO</button>
+                <button onClick={props.onAdd}>Agregar al carrito</button>
             </div>
         </div>
     )

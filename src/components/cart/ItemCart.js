@@ -1,11 +1,11 @@
 import React from 'react'
-import {useCartContext} from '../../context/Contexto'
+import { useCartContext } from '../../context/Contexto'
 
 function ItemCart(props) {
-    const {removingItem} = useCartContext();
-    
+    const { removingItem } = useCartContext();
 
-    const Delete = () =>{
+
+    const Delete = () => {
         removingItem(props.id, props.qty)
     }
     return (

@@ -64,8 +64,7 @@ function Checkout() {
             })
         clear()
     }
-    console.log(itemsOrden);
-    console.log(formName, formTel, formEmail);
+
     return (
         <div className="container checkout-container">
             {!compraFinalizada || !ordenId ? (

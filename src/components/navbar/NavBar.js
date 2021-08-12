@@ -22,7 +22,7 @@ function NavBar() {
                         {cartCount !== 0 ? (
                             <NavLink style={{ textDecoration: 'none', color: 'white', padding: '9px', display: 'flex', alignItems: 'flex-end' }} to="/cart"><CartWidget /><span>({cartCount})</span></NavLink>
                         ) : (
-                        <></>
+                            <></>
                         )
                         }
 

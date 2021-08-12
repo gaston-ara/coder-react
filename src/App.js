@@ -8,7 +8,6 @@ import CartProvider, { CartContext } from './context/Contexto'
 
 
 function App() {
-  console.log(CartContext);
   return (
     <div className="App">
       <CartProvider>
