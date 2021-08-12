@@ -4,7 +4,7 @@ Consiste en un simulador de ecommerce realizado en React, con el fin de ser pres
 
 ## GIF de demostracion.
 
-![](./src/assets/ReactApp.gif)
+![gif](./src/assets/ReactApp.gif)
 
 ## Librerias Utilizadas
 
