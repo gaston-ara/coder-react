@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 // Componentes importados
 import AppRouter from './routers/AppRouter'
-import CartProvider, { CartContext } from './context/Contexto'
+import CartProvider from './context/Contexto'
 
 
 function App() {

@@ -54,7 +54,7 @@ function ItemListContainer(props) {
             <h2 className="shop-title" id="catalogo">{props.greetings}</h2>
             <div className="catalogo">
                 <div className="row">
-                    <div><ItemList datos={datos} /></div>
+                    <div className="container"><ItemList datos={datos} /></div>
                 </div>
             </div>
         </div>

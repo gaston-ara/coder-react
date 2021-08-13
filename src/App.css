@@ -62,7 +62,7 @@ html {
 
 /* Item */
 .card-item {
-  width: 300px;
+  max-width: 300px;
   padding: 10px 0;
   outline: none;
   border-radius: 10px;
@@ -175,10 +175,11 @@ html {
   border-radius: 25px;
   background-color: black;
   color: white;
-  width: 280px;
+  min-width: 100px;
+  max-width: 280px;
   margin: auto;
   height: 40px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 50px;
 }
 
@@ -301,7 +302,7 @@ footer .fondo-linkedin:hover {
   font-size: 21px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
-  width: 430px;
+  width: auto;
 }
 .buy-box .buybox-price p {
   text-align: left;
@@ -400,7 +401,7 @@ footer .fondo-linkedin:hover {
   padding: 20px;
 }
 .form-datos-container .form-datos .btn-comprar {
-  width: 30%;
+  max-width: 280px;
   margin: 10px auto;
   background-color: black;
   color: white;

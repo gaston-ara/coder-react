@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 function Item(props) {
 
     return (
-        <div className="col-sm-12 col-md-6 col-lg-4 my-3" >
+        <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 my-3 px-50" >
             <Link to={`/${props.id}`} style={{ textDecoration: 'none' }}>
                 <div className="card-item" key={props.index}>
                     <img className="card-img" src={props.image} alt="..." />
