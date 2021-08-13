@@ -22,8 +22,8 @@ Consiste en un simulador de ecommerce realizado en React, con el fin de ser pres
     
 Abrir [http://localhost:3000](http://localhost:3000) en el navegador para ver los resultados.
 
-## Librerias Utilizadas
+## Librerias utilizadas
 
 [SASS](https://sass-lang.com/): Se utilizó para organizar los estilos dividiendolos por cada componente.
 
-[React Bootstrap](https://react-bootstrap.github.io/): Se utilizó para facilitar el diseño responsive y para aplicar el carrusel.
+[React Bootstrap](https://react-bootstrap.github.io/): Se utilizó para facilitar el diseño responsive y para desarrollar el carrusel.
