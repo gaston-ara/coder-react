@@ -6,6 +6,22 @@ Consiste en un simulador de ecommerce realizado en React, con el fin de ser pres
 
 ![gif](./src/assets/ReactApp.gif)
 
+## Instalación
+1. Clonar el repositorio
+   ```bash
+   git clone https://github.com/gaston-ara/coder-react
+   ```
+2. Instalar modulos de Node
+   ```bash
+    npm install
+   ```
+3. Ejecutar el servidor local   
+    ```bash
+    npm start
+    ```
+    
+Abrir [http://localhost:3000](http://localhost:3000) en el navegador para ver los resultados.
+
 ## Librerias Utilizadas
 
 [SASS](https://sass-lang.com/): Se utilizó para organizar los estilos dividiendolos por cada componente.
