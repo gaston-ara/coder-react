@@ -11,7 +11,7 @@ function Item(props) {
                     <img className="card-img" src={props.image} alt="..." />
                     <hr className="w-75 mx-auto" />
                     <div className="card-content">
-                        <h5 className="card-title">{props.title}</h5>
+                        <h3 className="card-title">{props.title}</h3>
                         <p className="card-text">${props.price}</p>
                     </div>
                 </div>

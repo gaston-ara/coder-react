@@ -80,6 +80,7 @@ html {
 }
 .card-item .card-content .card-title {
   height: 48px;
+  font-size: 20px;
   color: black;
   overflow: hidden;
 }
