@@ -2,7 +2,7 @@
 
 Consiste en un simulador de ecommerce realizado en React, con el fin de ser presentado como proyecto final del curso de React de Coderhouse.
 
-## GIF de demostracion.
+## GIF de demostración.
 
 ![gif](./src/assets/ReactApp.gif)
 
